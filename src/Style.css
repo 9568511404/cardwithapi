@@ -1,0 +1,319 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ec18d6;
+    width: 100%;
+    position: sticky;
+    top: 10px;
+  }
+  
+  .nav-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  /* Add responsive styles for smaller screens */
+  @media screen and (max-width: 480px) {
+    .navbar {
+      flex-direction: row;
+    }
+  
+    .nav-links {
+      display: none;
+      background-color: #f4f0f4;
+      position: absolute;
+      top: 30px;
+      right: 0px;
+      text-align: center;
+    }
+
+    .nav-links ul {
+        list-style: none;
+        display: block;
+      }
+      .nav-links ul li{
+        margin: 10px;
+      }
+      .nav-links ul li a{
+        font-size: 14px;
+        color: black;
+      }
+
+    .nav-links.active {
+      display: block;
+    }
+  
+    .nav-toggle {
+      display: flex;
+    }
+  
+    .bar.active:nth-child(1) {
+      transform: translateY(6px) rotate(-60deg);
+    }
+  
+    .bar.active:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .bar.active:nth-child(3) {
+      transform: translateY(-6px) rotate(45deg);
+    }
+  }
+
+
+
+
+  .three-part-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    width: 100%; 
+  }
+  
+  .left-part{
+    /* width: 20%; */
+    background-color: pink;
+  }
+  .middle-part{
+    /* width: 60%; */
+    background-color: rgb(237, 99, 122);
+  }
+  .right-part {
+    /* width: 20%; */
+    background-color: pink;
+  }
+  
+  /* You can style each part individually if needed */
+  .left-part {
+    background-color: #f1f1f1;
+  }
+  
+  .middle-part {
+    background-color: #fff;
+  }
+  
+  .right-part {
+    background-color: #e1e1e1;
+  }
+  
+
+ .footer{
+    background-color: #ec18d6;
+    height: 40px;
+    width: 100%;
+ }
+  
+
+ /* CSS for ModalForm.js */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  width: 60%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.inform{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.red{
+  width: 15%;
+  background-color: red;
+  height: 50px;
+  
+}
+
+.green{
+  /* background-color: green; */
+  width: 15%;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(to right, rgb(231, 97, 202) , rgb(248, 32, 180));
+}
+
+
+.yellow{
+  width: 15%;
+  background-color: yellow;
+  aspect-ratio: 1/1;
+}
+
+.purple{
+  width: 15%;
+  background-color: purple;
+  aspect-ratio: 1/1;
+}
+
+
+
+
+
+
+
+
+.bar-chart-container {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* Style the bars */
+/* .chartjs-render-monitor .chartjs-bar {
+  borderRadius: 5px;
+  borderWidth: 2;
+  borderStyle: solid;
+} */
+
+
+
+
+
+
+.bar-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 300px;
+}
+
+.bar {
+  width: 20px;
+  text-align: center;
+  color: white;
+  margin: 0 10px;
+  transition: height 0.5s;
+}
+
+
+
+
+
+/* Add CSS styles to a separate CSS file or use a CSS-in-JS solution */
+.chart {
+  width: 400px;
+  height: 300px;
+  margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+.main {
+  width: 20rem;
+  padding: 0.7rem;
+  margin-left: 1rem;
+  border: 1px solid blue;
+}
+.header {
+  display: flex;
+  margin-bottom: 0.7rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.header button {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+.box {
+  height: 2rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.box.empty {
+  background-color: #e0e0e0;
+  cursor: default;
+}
+.box.selected {
+  background-color: blue;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
